@@ -1,0 +1,848 @@
+Git hash: HEAD
+
+*************
+Git diff:
+*************
+diff --git a/CarLaneDetection b/CarLaneDetection
+--- a/CarLaneDetection
++++ b/CarLaneDetection
+@@ -1 +1 @@
+-Subproject commit 6e51229d387cc83b2a3d73b9d9908bf92a05f2af
++Subproject commit 6e51229d387cc83b2a3d73b9d9908bf92a05f2af-dirty
+diff --git a/Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition b/Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition
+--- a/Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition
++++ b/Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition
+@@ -1 +1 @@
+-Subproject commit 7b13d854247c105ba917f328e077e0c3e828a57e
++Subproject commit 7b13d854247c105ba917f328e077e0c3e828a57e-dirty
+diff --git a/LaneDetection_End2End-master/.idea/markdown-navigator.xml b/LaneDetection_End2End-master/.idea/markdown-navigator.xml
+index 57b84e5..a2fc086 100644
+--- a/LaneDetection_End2End-master/.idea/markdown-navigator.xml
++++ b/LaneDetection_End2End-master/.idea/markdown-navigator.xml
+@@ -24,7 +24,7 @@
+         <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
+       </ParserOptions>
+     </ParserSettings>
+-    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="true" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="false" migratedAnchorLinks="false" plantUmlConversion="0">
++    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="false" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="true" migratedAnchorLinks="true" plantUmlConversion="0">
+       <GeneratorProvider>
+         <provider providerId="com.vladsch.md.nav.editor.text.html.generator" providerName="Unmodified HTML Generator" />
+       </GeneratorProvider>
+@@ -32,7 +32,23 @@
+       <headerBottom />
+       <bodyTop />
+       <bodyBottom />
+-      <fencedCodeConversions />
++      <fencedCodeConversions>
++        <option name="c4plantuml" value="NONE" />
++        <option name="ditaa" value="NONE" />
++        <option name="erd" value="NONE" />
++        <option name="graphviz" value="NONE" />
++        <option name="latex" value="KATEX" />
++        <option name="math" value="KATEX" />
++        <option name="mermaid" value="NONE" />
++        <option name="nomnoml" value="NONE" />
++        <option name="plantuml" value="NONE" />
++        <option name="puml" value="NONE" />
++        <option name="svgbob" value="NONE" />
++        <option name="umlet" value="NONE" />
++        <option name="vega" value="NONE" />
++        <option name="vegalite" value="NONE" />
++        <option name="wavedrom" value="NONE" />
++      </fencedCodeConversions>
+     </HtmlSettings>
+     <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
+       <StylesheetProvider>
+diff --git a/LaneDetection_End2End-master/.idea/workspace.xml b/LaneDetection_End2End-master/.idea/workspace.xml
+index 02dff73..58364f0 100644
+--- a/LaneDetection_End2End-master/.idea/workspace.xml
++++ b/LaneDetection_End2End-master/.idea/workspace.xml
+@@ -1,14 +1,701 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="279c629f-98dd-4628-9972-a639312be52e" name="Default Changelist" comment="" />
++    <list default="true" id="279c629f-98dd-4628-9972-a639312be52e" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/CarLaneDetection-master.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/resources/lane.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/resources/video_1.mp4" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/resources/video_1_sol.mp4" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/resources/video_2.mp4" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/resources/video_2_sol.mp4" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CarLaneDetection-master/src/lane_detection.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/LaneDetection_End2End-master.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Dataloader/Load_Data_new.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/Curve_parameters.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/label_data_0313.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/label_data_0531.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/label_data_0601.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/label_data_all.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/label_new.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Labels/lanes_ordered.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Loss_crit.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/ERFNet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/LSQ_layer.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/Least_squares_net.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/gels.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/Networks/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/eval_lane.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/main.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/test.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Backprojection_Loss/train.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Dataloader/Load_Data_new.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/Curve_parameters.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/label_data_0313.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/label_data_0531.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/label_data_0601.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/label_data_all.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Labels/label_new.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Loss_crit.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Networks/ERFNet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Networks/LSQ_layer.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Networks/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/Networks/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/eval_lane.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Birds_Eye_View_Loss/main.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/PolyLaneNet-master.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/elas.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/elas_cls.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/llamas.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_1order.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_2order.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_320x180.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_480x270.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_efficientnetb1.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_fulltrain.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_no_share_top_y.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_noaug.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_nopretrain.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_resnet34.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/cfgs/tusimple_resnet50.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/figures/method-overview.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/config.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/elas.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/lane_dataset.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/llamas.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/nolabel_dataset.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/datasets/tusimple.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/lib/models.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/model_2695.pt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/requirements.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/test.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/evaluator.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/gen_video.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/lane.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/metric.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/plot_log.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../PolyLaneNet-master/utils/upperbound.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/dfsign-master.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/_init_paths.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/cfgs/res101.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/cfgs/res101_ls.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/cfgs/res50.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/cfgs/vgg16.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/dfsign_detect.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img1.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img1_det.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img1_det_res101.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img2.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img2_det.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img2_det_res101.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img3.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img3_det.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img3_det_res101.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img4.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img4_det.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/images/img4_det_res101.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/VOCdevkit-matlab-wrapper/get_voc_opts.m" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/VOCdevkit-matlab-wrapper/voc_eval.m" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/VOCdevkit-matlab-wrapper/xVOCap.m" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/dfsign.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/ds_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/factory.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/imagenet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/imdb.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/pascal_voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/pascal_voc_rbg.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/tools/mcg_munge.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/vg.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/vg_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/datasets/voc_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/ROIAlign.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/ROIPool.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cpu/ROIAlign_cpu.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cpu/nms_cpu.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cpu/vision.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cuda/ROIAlign_cuda.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cuda/ROIPool_cuda.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cuda/nms.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/cuda/vision.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/nms.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/csrc/vision.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/faster_rcnn/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/faster_rcnn/faster_rcnn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/faster_rcnn/resnet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/faster_rcnn/vgg16.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/_ext/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/_ext/nms/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/build.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/make.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/nms_cpu.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/nms_gpu.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/nms_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/nms_wrapper.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/src/nms_cuda.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/src/nms_cuda_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/nms/src/nms_cuda_kernel.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/_ext/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/_ext/roi_align/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/build.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/functions/roi_align.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/make.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/modules/roi_align.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align_cuda.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align_cuda.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_align/src/roi_align_kernel.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/_ext/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/_ext/crop_resize/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/_ext/roi_crop/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/build.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/functions/crop_resize.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/functions/gridgen.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/functions/roi_crop.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/make.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/modules/gridgen.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/modules/roi_crop.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop_cuda.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop_cuda.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop_cuda_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_crop/src/roi_crop_cuda_kernel.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_layers/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_layers/nms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_layers/roi_align.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_layers/roi_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/_ext/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/_ext/roi_pooling/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/build.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/functions/roi_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/modules/roi_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling_cuda.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling_cuda.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/roi_pooling/src/roi_pooling_kernel.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/anchor_target_layer.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/bbox_transform.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/generate_anchors.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/proposal_layer.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/proposal_target_layer_cascade.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/rpn/rpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/bbox.pyx" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/blob.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/config.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/model/utils/net_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/UPSTREAM_REV" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/_mask.pyx" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/cocoeval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/license.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/mask.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/maskApi.c" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/pycocotools/maskApi.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/roi_data_layer/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/roi_data_layer/minibatch.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/roi_data_layer/roibatchLoader.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/roi_data_layer/roidb.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/lib/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/requirements.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/test_net.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/train.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/faster-rcnn.pytorch/trainval_net.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/.travis.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/GETTING_STARTED.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/INSTALL.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/MODEL_ZOO.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/TECHNICAL_DETAILS.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/compile.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_mask_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_mask_rcnn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_mask_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_mask_rcnn_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_mask_rcnn_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_rcnn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_rcnn_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/cascade_rcnn_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/cascade_mask_rcnn_dconv_c3-c5_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/cascade_rcnn_dconv_c3-c5_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/faster_rcnn_dconv_c3-c5_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/faster_rcnn_dconv_c3-c5_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/faster_rcnn_dpool_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/faster_rcnn_mdconv_c3-c5_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/faster_rcnn_mdpool_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/dcn/mask_rcnn_dconv_c3-c5_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/fast_mask_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/fast_mask_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/fast_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/fast_rcnn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/fast_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_ohem_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/faster_rcnn_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn+ws/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn+ws/faster_rcnn_r50_fpn_gn_ws_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn+ws/mask_rcnn_r50_fpn_gn_ws_20_23_24e.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn+ws/mask_rcnn_r50_fpn_gn_ws_2x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn+ws/mask_rcnn_x101_32x4d_fpn_gn_ws_2x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn/mask_rcnn_r101_fpn_gn_2x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn/mask_rcnn_r50_fpn_gn_2x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/gn/mask_rcnn_r50_fpn_gn_contrib_2x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_dconv_c3-c5_mstrain_400_1400_x101_64x4d_fpn_20e.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_r101_fpn_20e.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_r50_fpn_20e.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_without_semantic_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_x101_32x4d_fpn_20e_16gpu.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/htc/htc_x101_64x4d_fpn_20e_16gpu.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/mask_rcnn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/mask_rcnn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/mask_rcnn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/mask_rcnn_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/mask_rcnn_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/pascal_voc/faster_rcnn_r50_fpn_1x_voc0712.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/pascal_voc/ssd300_voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/pascal_voc/ssd512_voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/retinanet_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/retinanet_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/retinanet_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/retinanet_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/rpn_r101_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/rpn_r50_c4_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/rpn_r50_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/rpn_x101_32x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/rpn_x101_64x4d_fpn_1x.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/ssd300_coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/configs/ssd512_coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/demo/coco_test_12510.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/cascade_rcnn_r101_fpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/cascade_rcnn_r50_fpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/cascade_rcnn_x101_64x4d_fpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/detect.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/dist_train.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/dfsign/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/apis/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/apis/env.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/apis/inference.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/apis/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/anchor/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/anchor/anchor_generator.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/anchor/anchor_target.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/assign_sampling.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/assigners/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/assigners/assign_result.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/assigners/base_assigner.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/assigners/max_iou_assigner.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/bbox_target.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/geometry.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/base_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/combined_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/instance_balanced_pos_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/iou_balanced_neg_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/ohem_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/pseudo_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/random_sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/samplers/sampling_result.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/bbox/transforms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/bbox_overlaps.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/class_names.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/coco_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/eval_hooks.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/mean_ap.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/evaluation/recall.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/loss/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/loss/losses.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/mask/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/mask/mask_target.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/mask/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/post_processing/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/post_processing/bbox_nms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/post_processing/merge_augs.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/utils/dist_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/core/utils/misc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/concat_dataset.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/custom.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/dfsign.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/extra_aug.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/loader/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/loader/build_loader.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/loader/sampler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/repeat_dataset.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/transforms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/datasets/xml_style.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/anchor_heads/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/anchor_heads/anchor_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/anchor_heads/retina_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/anchor_heads/rpn_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/anchor_heads/ssd_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/backbones/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/backbones/resnet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/backbones/resnext.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/backbones/ssd_vgg.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/bbox_heads/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/bbox_heads/bbox_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/bbox_heads/convfc_bbox_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/builder.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/base.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/cascade_rcnn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/fast_rcnn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/faster_rcnn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/htc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/mask_rcnn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/retinanet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/rpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/single_stage.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/test_mixins.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/detectors/two_stage.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/mask_heads/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/mask_heads/fcn_mask_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/mask_heads/fused_semantic_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/mask_heads/htc_mask_head.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/necks/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/necks/fpn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/registry.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/roi_extractors/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/roi_extractors/single_level.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/shared_heads/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/shared_heads/res_layer.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/utils/conv_module.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/utils/conv_ws.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/utils/norm.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/models/utils/weight_init.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/functions/deform_conv.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/functions/deform_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/modules/deform_conv.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/modules/deform_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/src/deform_conv_cuda.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/src/deform_conv_cuda_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/src/deform_pool_cuda.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/dcn/src/deform_pool_cuda_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/nms_wrapper.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/src/nms_cpu.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/src/nms_cuda.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/src/nms_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/nms/src/soft_nms_cpu.pyx" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/functions/roi_align.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/gradcheck.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/modules/roi_align.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/src/roi_align_cuda.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_align/src/roi_align_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/functions/roi_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/gradcheck.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/modules/roi_pool.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/src/roi_pool_cuda.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/roi_pool/src/roi_pool_kernel.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/functions/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/functions/sigmoid_focal_loss.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/modules/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/modules/sigmoid_focal_loss.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/src/sigmoid_focal_loss.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/mmdet/ops/sigmoid_focal_loss/src/sigmoid_focal_loss_cuda.cu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/setup.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/coco_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/convert_datasets/pascal_voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/dist_train.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/publish_model.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/slurm_test.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/slurm_train.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/test.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/upgrade_model_version.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/mmdetection/tools/voc_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/custom_transforms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/cityscapes.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/combine_dbs.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/dfsign.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/pascal.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/datasets/sbd.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/dataloaders/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/doc/deeplab_resnet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/doc/deeplab_xception.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/doc/results.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/aspp.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/backbone/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/backbone/drn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/backbone/mobilenet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/backbone/resnet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/backbone/xception.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/decoder.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/deeplab.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/sync_batchnorm/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/sync_batchnorm/batchnorm.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/sync_batchnorm/comm.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/sync_batchnorm/replicate.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/modeling/sync_batchnorm/unittest.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/mypath.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/test.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/test.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/train_dfsign.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/calculate_weights.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/dfsign_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/loss.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/lr_scheduler.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/metrics.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/saver.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/pytorch-deeplab-xception/utils/summaries.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/analysis.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/check_gt_cord.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/check_missing.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/convert2voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/dfsign_ensemble.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/dfsign_submit.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/generate_detect_chip.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/generate_mask_chip.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/generate_train_chip.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/pascal2coco.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/test.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/tt100k_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/tt100k_recall.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/tools/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3-1cls.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3-dfsign.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3-spp.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3-tiny.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3-voc.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/cfg/yolov3.cfg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/data/dataset_dfsign.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/data/dataset_voc.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/data/datasets.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/data/transforms.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/debug.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/detect.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/dfsign_detect.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/eval/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/eval/voc_eval.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/models.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/requirements.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/script.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/test.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/train.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/focal_loss.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/gcp.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/parse_config.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/torch_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/utils/utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../dfsign-master/yolov3/weights/download_yolov3_weights.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../laneDection" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/lanenet-lane-detection-master.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/LICENSE" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/_config.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/config/tusimple_lanenet.yaml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/accuracy.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/binary_seg_loss.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/instance_seg_loss.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/lanenet_batch_test.gif" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/lanenet_binary_seg.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/lanenet_embedding.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/lanenet_instance_seg.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/lanenet_mask_result.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/network_architecture.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/qr.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/source_image/total_loss.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0000.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0001.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0002.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0003.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0004.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_binary_image/0005.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0000.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0001.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0002.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0003.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0004.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/gt_instance_image/0005.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0000.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0001.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0002.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0003.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0004.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/image/0005.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/train.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/training_data_example/val.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/tusimple_ipm_remap.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/tusimple_test_image/0.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/tusimple_test_image/1.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/tusimple_test_image/2.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data/tusimple_test_image/3.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data_provider/lanenet_data_feed_pipline.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/data_provider/tf_io_pipline_tools.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/lanenet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/lanenet_back_end.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/lanenet_discriminative_loss.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/lanenet_front_end.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/lanenet_postprocess.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/tusimple_lanenet.ckpt.data-00000-of-00001" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/tusimple_lanenet.ckpt.index" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/lanenet_model/tusimple_lanenet.ckpt.meta" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/local_utils/config_utils/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/local_utils/config_utils/parse_config_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/local_utils/log_util/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/local_utils/log_util/init_logger.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/config.ini" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/config_parser.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/config_parser.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/convert_lanenet_model_into_mnn_model.sh" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/dbscan.hpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/freeze_lanenet_model.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/kdtree.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/kdtree.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/lanenet_model.cpp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/mnn_project/lanenet_model.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/requirements.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/semantic_segmentation_zoo/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/semantic_segmentation_zoo/bisenet_v2.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/semantic_segmentation_zoo/cnn_basenet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/semantic_segmentation_zoo/vgg16_based_fcn.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/evaluate_lanenet_on_tusimple.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/evaluate_model_utils.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/generate_tusimple_dataset.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/make_tusimple_tfrecords.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/test_lanenet.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/tools/train_lanenet_tusimple.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/trainner/__init__.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/trainner/tusimple_lanenet_multi_gpu_trainner.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../lanenet-lane-detection-master/trainner/tusimple_lanenet_single_gpu_trainner.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../surround-view-system-introduction" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../surround-view-system-introduction-imported" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="JupyterTrust" id="92d7fe10-4e5b-4431-bd92-82fa9e23335e" />
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++  </component>
++  <component name="JupyterTrust" id="c9aaaa7d-fd8d-48da-8447-710676b1beb6" />
+   <component name="ProjectId" id="1sn40faA2NoOv03IkKTFs7Gze8p" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -17,7 +704,7 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lane-Segmentation-Solution-For-BaiduAI-Autonomous-Driving-Competition" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laneDection" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -34,6 +721,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1621494798209</updated>
+       <workItem from="1621494799256" duration="2988000" />
++      <workItem from="1628476691479" duration="6478000" />
+     </task>
+     <servers />
+   </component>
+@@ -41,9 +729,9 @@
+     <option name="version" value="3" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1621497183258">
++    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1628491063191">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.2048.1112@0.0.1536.824" timestamp="1621497183258" />
++    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.2048.1112@0.0.1536.824" timestamp="1628491063191" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git a/PolyLaneNet-master/.idea/PolyLaneNet-master.iml b/PolyLaneNet-master/.idea/PolyLaneNet-master.iml
+index 039314d..7c73ae5 100644
+--- a/PolyLaneNet-master/.idea/PolyLaneNet-master.iml
++++ b/PolyLaneNet-master/.idea/PolyLaneNet-master.iml
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.6 (detectron2)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="PyDocumentationSettings">
+diff --git a/PolyLaneNet-master/.idea/misc.xml b/PolyLaneNet-master/.idea/misc.xml
+index d56657a..6a66ac1 100644
+--- a/PolyLaneNet-master/.idea/misc.xml
++++ b/PolyLaneNet-master/.idea/misc.xml
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (detectron2)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+diff --git a/laneDection b/laneDection
+--- a/laneDection
++++ b/laneDection
+@@ -1 +1 @@
+-Subproject commit 5cb893ae2623cbaa7d79eb40f02ab6433edd2170
++Subproject commit 5cb893ae2623cbaa7d79eb40f02ab6433edd2170-dirty
+diff --git a/lanenet-lane-detection-master/.idea/vcs.xml b/lanenet-lane-detection-master/.idea/vcs.xml
+index 94a25f7..288b36b 100644
+--- a/lanenet-lane-detection-master/.idea/vcs.xml
++++ b/lanenet-lane-detection-master/.idea/vcs.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git a/surround-view-system-introduction b/surround-view-system-introduction
+--- a/surround-view-system-introduction
++++ b/surround-view-system-introduction
+@@ -1 +1 @@
+-Subproject commit 31413c4f6383c4d9f826fa67e59d9fb9595dcbb4
++Subproject commit 31413c4f6383c4d9f826fa67e59d9fb9595dcbb4-dirty
+diff --git a/surround-view-system-introduction-imported b/surround-view-system-introduction-imported
+--- a/surround-view-system-introduction-imported
++++ b/surround-view-system-introduction-imported
+@@ -1 +1 @@
+-Subproject commit dfd063a82a8290f5e87a18364bc08fad48cf7add
++Subproject commit dfd063a82a8290f5e87a18364bc08fad48cf7add-dirty

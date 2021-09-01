@@ -1,0 +1,91 @@
+[2021-08-09 18:16:01,702] [INFO] Experiment name: tusimple
+[2021-08-09 18:16:01,703] [INFO] Config:
+# Training settings
+seed: 0
+exps_dir: 'experiments'
+iter_log_interval: 1
+iter_time_window: 100
+model_save_interval: 1
+backup:
+model:
+  name: PolyRegression
+  parameters:
+    num_outputs: 35 # (5 lanes) * (1 conf + 2 (upper & lower) + 4 poly coeffs)
+    pretrained: true
+    backbone: 'resnet50'
+    pred_category: false
+    curriculum_steps: [0, 0, 0, 0]
+loss_parameters:
+  conf_weight: 1
+  lower_weight: 1
+  upper_weight: 1
+  cls_weight: 0
+  poly_weight: 300
+batch_size: 16
+epochs: 2695
+optimizer:
+  name: Adam
+  parameters:
+    lr: 3.0e-4
+lr_scheduler:
+  name: CosineAnnealingLR
+  parameters:
+    T_max: 385
+
+# Testing settings
+test_parameters:
+  conf_threshold: 0.5
+
+# Dataset settings
+datasets:
+  train:
+    type: LaneDataset
+    parameters:
+      dataset: tusimple
+      split: train
+      img_size: [360, 640]
+      normalize: true
+      aug_chance: 0.9090909090909091 # 10/11
+      augmentations:
+       - name: Affine
+         parameters:
+           rotate: !!python/tuple [-10, 10]
+       - name: HorizontalFlip
+         parameters:
+           p: 0.5
+       - name: CropToFixedSize
+         parameters:
+           width: 1152
+           height: 648
+      root: "datasets/tusimple"  # Dataset root
+
+  test: &test
+    type: LaneDataset
+    parameters:
+      dataset: tusimple
+      split: val
+      max_lanes: 5
+      img_size: [360, 640]
+      root: "datasets/tusimple"
+      normalize: true
+      augmentations: []
+
+  # val = test
+  val:
+    <<: *test
+
+[2021-08-09 18:16:01,704] [INFO] Args:
+Namespace(cfg='config.yaml', deterministic=False, exp_name='tusimple', resume=False, validate=False)
+[2021-08-09 18:16:01,704] [ERROR] Uncaught exception
+Traceback (most recent call last):
+  File "train.py", line 201, in <module>
+    train_dataset = cfg.get_dataset("train")
+  File "C:\Yunhua\program\learning\LaneDetection\PolyLaneNet-master\lib\config.py", line 23, in get_dataset
+    self.config['datasets'][split]['type'])(**self.config['datasets'][split]['parameters'])
+  File "C:\Yunhua\program\learning\LaneDetection\PolyLaneNet-master\lib\datasets\lane_dataset.py", line 32, in __init__
+    self.dataset = TuSimple(split=split, **kwargs)
+  File "C:\Yunhua\program\learning\LaneDetection\PolyLaneNet-master\lib\datasets\tusimple.py", line 35, in __init__
+    self.load_annotations()
+  File "C:\Yunhua\program\learning\LaneDetection\PolyLaneNet-master\lib\datasets\tusimple.py", line 71, in load_annotations
+    with open(anno_file, 'r') as anno_obj:
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/tusimple\\label_data_0313.json'
