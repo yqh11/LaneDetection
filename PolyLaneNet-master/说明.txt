@@ -1,0 +1,2 @@
+1. 数据集：https://github.com/TuSimple/tusimple-benchmark/issues/3
+2. 源训练代码： https://github.com/lucastabelini/LaneATT/
